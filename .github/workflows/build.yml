@@ -10,7 +10,7 @@ jobs:
         distribution: 'adopt'
         java-version: '17'
     - name: Build with Gradle
-      run: gradle wrapper --gradle-version 7.5 && ./gradlew :app:assembleDebug
+      run: gradle wrapper --gradle-version 7.5 && ./gradlew assembleDebug
     - uses: actions/upload-artifact@v4
       with:
         name: my-apk
